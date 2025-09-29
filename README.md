@@ -12,7 +12,7 @@ Features:
 
 2 : About Me section highlighting skills
 
-3 : ontact section with email or contact form
+3 : Contact section with email or contact form
 
 4 : Responsive design for desktop, tablet, and mobile
 
