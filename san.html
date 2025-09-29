@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity2</title>
+
+
+    <style>
+        .container {
+            padding: 20px;
+            height: 100vh;
+            width: 90vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin: auto;
+        }
+
+        .box {
+            object-fit: cover;
+            display: flex;
+            margin: 10px;
+
+        }
+
+    </style>
+    <h1>Dogs</h1>
+    <img src="data:image/png;base64,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" alt="Doggy" height="80px" width="100px" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.37 copy.jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+        <div class="box" id="box2">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.37.jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+        <div class="box" id="box3">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.55.jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+        <div class="box" id="box4">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.38 (1).jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+        <div class="box" id="box5">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.38.jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+        <div class="box" id="box6">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.39 (1).jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+        <div class="box" id="box7">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.39 (2).jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+        <div class="box" id="box8">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.39.jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+        <div class="box" id="box9">
+            <img src="/WhatsApp Image 2025-09-08 at 19.25.40.jpeg" height="200px" width="250px" style="border-radius:10px;" />
+        </div>
+    </div>
+</body>
+
+</html>
