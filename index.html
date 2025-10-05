@@ -4,131 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Taheer's Portfolio</title>
+    <meta name="description" content="Taheer's personal portfolio showcasing projects, education, and contact links.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
 </head>
 
 <body>
-    <!--nav bar-->
-    <nav>
-        <div class="left">
-            <a href="/">Taheer Hatia</a>
-        </div>
-        <div class="right">
-            <a href="https://github.com/TheTaheer1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>
-                <span>Github</span></a>
-            <a href="https://www.linkedin.com/in/taheer-hatia-16ab37370?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BllhP3KPCS%2BqVLRFb09024Q%3D%3D" target="_blank" rel="noopener noreferrer"><i
-                    class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span></a>
-            <a href="mailto:taheerhatia18@gmail.com" id="A"><i class="fa-solid fa-envelope"></i></i>
-                <span>Mail</span></a>
 
+    <header>
+        <a href="#" class="logo">Taheer's Portfolio</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#qual">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-
-
-        </div>
-
-    </nav>
-    <main>
-        <!--Section1: Hero-->
-        <section class="hero-section">
-            <div class="Text">
-                <h2>Hi, I'm Taheer </h2>
-                <p>I'm a 18-year-old aspiring web developer based in Valsad. Ever since I got into coding, I’ve been fascinated by how websites work and how design meets functionality. I enjoy building responsive, clean, and user-friendly websites that provide a seamless experience. Every line of code I write reflects my curiosity and desire to create something meaningful.</p>
-
-        <p>Currently, I’m focusing on sharpening my front-end development skills and diving deeper into technologies like HTML, CSS, JavaScript, and React. I’m always on the lookout for opportunities to learn, grow, and collaborate with like-minded people. Whether it’s a personal project or a freelance opportunity, I bring passion and dedication to everything I build.</p>
-
-                <div class="links">
-                    <a href="#Skills"> <i class="fa-solid fa-code"></i>
-                        <span>Skills</span>
-                    </a>
-
-                    <a href="#Testimony"> <i class="fa-solid fa-pen"></i>
-                        <span>Testimony</span>
-                    </a>
-
-                    <a href="#Contact"> <i class="fa-solid fa-envelope"></i>
-                        <span>Contact</span></a>
-                </div>
-            </div>
-            <div class="headshot">
+    <section class="home">
+        <div class="home-left">
+            <div class="pfp">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAACUCAMAAAANv/M2AAAAM1BMVEXk5ueutLersbTn6eqorrHg4uPq7O3Hy83Z3N3P0tTKztDT1tjd3+C0uby3vL/EyMq+wsUfEJVQAAAE2ElEQVR4nO2c247jIAyGAwZKOL//0w5JD9ND0oZgQyr1vxntaqT91jJ2MLaH4aeffvrpp2qBAujNsFUTqHR6HM3JGKudvPzdcQUgrUmBCSF4Vv4hWEjGuuNygxxT4IKzR/EZXKoDcoOS0TP+THwFZz451ZvxSTDo8GLiZ4N73RvzUTp+QJ4lkj2Mj8AQ2Qbk2UuSPAa20puAL9jeHsK1oyiAnnyke/wDHbZ5xh21d32pQftS5smzu55HsMXEZ3WkhrHMnf8lxl7HEcZy17hRd7I12P3MrJOH5DNYw8yY7kDtdsSNe3HeIfKlOuYpObZGhtPewPEvcWpsalnPzJofxspDeBYPsiEymFqHvlCfGkI7FENP1K4d9AnH0JODNEvnDuUUzhKtTK2qQ/SdQqsAgmdo1iqbA5pHT+KxCbRERM7yLUwNIy40H+mZEb6UnqBTA+baz+hXavqoV3lfWYI29E4d0aE9fVbE9o6cFckt7bANnaHJS8AWNR3O4tQ3GEB36SzqTz2F79I5KRJbWhEYmnnqWxe+S2cRn0ScW/iziG/lmgSaOCfuLu6+E3HMA/ODvkLT3l6wqjQ/6M/Q3+geNNGDGJrgI4+Rx2ma5DLSQiOW8e5EXVz/xg8mkk9TRvxp+pWXANzq40WJuoZAcbElr9ZQlBDo62IBH5q+woTv1OQuTVCAFJaamaDUSx2lZ31jUX13s9UadJtXfVzo0OT5E/fK1ehJbgDcx88mzINCLPdy+iB9EeLzp2jXpoLXOpHaNQR9ZZMK1lNzmyfmGzVKWmzbeDUgXXAbd25ilJpEg/flJ+rqYN0uRP9LVl5hOPmb1oLA1UF3mi+qeulq9EX6qgpbix4t32eVzBI9mLnr+MVe6r6DZ3JtAvGtofv5xlnlCb1F+89HmY1zfRdk1rqpflFFM2e8ScPjBsFgtsx9Tsji1H2u76Zts5+c9R9FfJDS0b8PJNwnfYAT+CQ9BrGW2LkIRh90zYAzXry6d/6vRH3g5QKgBhvD/bXXh2SHI07nPwiyFzhrR2PMaLWetk/0RtoouKo3yBaBmnVjvv65N9eCzhaVTlsT07TFQfyLT159Gq2T86aPY+BPwNqOpxRyXBPLoXpe9cF9iMZqOfR2GqWkPaXZuBvyOJ92f4QUR9ftcGZ3zVnQs9WdHmvk+dd9Gttz539PTvlvf+mDTwlHNkw42YnNwpqXcm4frWvi4ADOpEKXWOfmIeZ8SY2sbGBFN5WP3MxHIMSGQRpO0A6UPwE1kXdnTz4xkg6mGdtS7IVROnki5BmbB4NtbSUDqicvYrMRM5SALNxLs1OCWSxrgyyrbFRhJ6QCcE59jZDZFAFj/YmEISElku3Y1athbHW2LpeoWosFGrmLZqOysXczq7FyWcp+ar63FqViY29+wN61Fgtc8f4tZOxyF9m1fwtXxRVWsM3yyRvqWESNPYW/U2XHkWQEZ4e43xyxSRq792kzNc3U0E7xsIkaTG/QB22irtknR6INPUP47dHVEp/a4EAejvnzDjLonLtX9H62q8+n6Ge9eeY9SCJ8FQ/rdq7sSiIUj2tXMHVMh5611j6EsWyQUMvMx3WOWctt+BTrRjC1UMbBngRB1+LEw1FD9E2vw3RAM6aMqdcthkcOd1eJ56oCzWg1rm69y3+XFUSXOSCe0AAAAABJRU5ErkJggg=="
-                    alt="">
-
+                    alt="Taheer - Profile Picture">
             </div>
-
-
-        </section>
-        <!--Section2: Skills-->
-        <section id="Skills" class="Skills">
-            <h2>Skills</h2>
-            <div class="text">
-                <p>
-                I have a solid understanding of HTML and CSS, which form the foundation of every website. With HTML, I can structure webpages properly, using elements like headings, paragraphs, lists, and forms. CSS helps me bring those pages to life by adding design, layout, and responsiveness. I’m comfortable creating clean layouts, working with flexbox, and making pages look good on different screen sizes. I’m still learning and improving every day, and I enjoy turning simple ideas into real web pages.
-    </p>
+        </div>
+        <div class="home-right">
+            <div class="homeIntro">
+                <h1>Hello 👋, I'm <span>Taheer</span></h1>
+                <h3>I'm a <span>Frontend Developer</span></h3>
+                <p>I'm an 18-year-old aspiring web developer based in Valsad. I enjoy building responsive, clean, and
+                    user-friendly websites.</p>
+                <p>Currently, I’m focusing on HTML, CSS, JavaScript, and React, and I’m always looking for opportunities
+                    to learn, grow, and collaborate.</p>
+                <a href="#contact" class="btn">Connect with Me</a>
             </div>
-            <div class="cells">
-                <div class="cell"><img
-                        src="data:image/jpeg;base64,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"
-                        alt="">
-                    <span>HTML</span>
-                </div>
-                <div class="cell"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwhmgyeZLP_uEl_Q16m3AgqS_qdBgc0XLdHETbK9bwMxFWB7YzAUmf1ck&s"
-                        alt="">
-                    <span>CSS</span>
-                </div>
-            </div>
-        </section>
-        <!--Section3: Testimony-->
-        <section id="Testimony" class="Testimony">
-            <h2>Testimony</h2>
-            <div class="group">
-                <div class="person-details">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAACUCAMAAAANv/M2AAAAM1BMVEXk5ueutLersbTn6eqorrHg4uPq7O3Hy83Z3N3P0tTKztDT1tjd3+C0uby3vL/EyMq+wsUfEJVQAAAE2ElEQVR4nO2c247jIAyGAwZKOL//0w5JD9ND0oZgQyr1vxntaqT91jJ2MLaH4aeffvrpp2qBAujNsFUTqHR6HM3JGKudvPzdcQUgrUmBCSF4Vv4hWEjGuuNygxxT4IKzR/EZXKoDcoOS0TP+THwFZz451ZvxSTDo8GLiZ4N73RvzUTp+QJ4lkj2Mj8AQ2Qbk2UuSPAa20puAL9jeHsK1oyiAnnyke/wDHbZ5xh21d32pQftS5smzu55HsMXEZ3WkhrHMnf8lxl7HEcZy17hRd7I12P3MrJOH5DNYw8yY7kDtdsSNe3HeIfKlOuYpObZGhtPewPEvcWpsalnPzJofxspDeBYPsiEymFqHvlCfGkI7FENP1K4d9AnH0JODNEvnDuUUzhKtTK2qQ/SdQqsAgmdo1iqbA5pHT+KxCbRERM7yLUwNIy40H+mZEb6UnqBTA+baz+hXavqoV3lfWYI29E4d0aE9fVbE9o6cFckt7bANnaHJS8AWNR3O4tQ3GEB36SzqTz2F79I5KRJbWhEYmnnqWxe+S2cRn0ScW/iziG/lmgSaOCfuLu6+E3HMA/ODvkLT3l6wqjQ/6M/Q3+geNNGDGJrgI4+Rx2ma5DLSQiOW8e5EXVz/xg8mkk9TRvxp+pWXANzq40WJuoZAcbElr9ZQlBDo62IBH5q+woTv1OQuTVCAFJaamaDUSx2lZ31jUX13s9UadJtXfVzo0OT5E/fK1ehJbgDcx88mzINCLPdy+iB9EeLzp2jXpoLXOpHaNQR9ZZMK1lNzmyfmGzVKWmzbeDUgXXAbd25ilJpEg/flJ+rqYN0uRP9LVl5hOPmb1oLA1UF3mi+qeulq9EX6qgpbix4t32eVzBI9mLnr+MVe6r6DZ3JtAvGtofv5xlnlCb1F+89HmY1zfRdk1rqpflFFM2e8ScPjBsFgtsx9Tsji1H2u76Zts5+c9R9FfJDS0b8PJNwnfYAT+CQ9BrGW2LkIRh90zYAzXry6d/6vRH3g5QKgBhvD/bXXh2SHI07nPwiyFzhrR2PMaLWetk/0RtoouKo3yBaBmnVjvv65N9eCzhaVTlsT07TFQfyLT159Gq2T86aPY+BPwNqOpxRyXBPLoXpe9cF9iMZqOfR2GqWkPaXZuBvyOJ92f4QUR9ftcGZ3zVnQs9WdHmvk+dd9Gttz539PTvlvf+mDTwlHNkw42YnNwpqXcm4frWvi4ADOpEKXWOfmIeZ8SY2sbGBFN5WP3MxHIMSGQRpO0A6UPwE1kXdnTz4xkg6mGdtS7IVROnki5BmbB4NtbSUDqicvYrMRM5SALNxLs1OCWSxrgyyrbFRhJ6QCcE59jZDZFAFj/YmEISElku3Y1athbHW2LpeoWosFGrmLZqOysXczq7FyWcp+ar63FqViY29+wN61Fgtc8f4tZOxyF9m1fwtXxRVWsM3yyRvqWESNPYW/U2XHkWQEZ4e43xyxSRq792kzNc3U0E7xsIkaTG/QB22irtknR6INPUP47dHVEp/a4EAejvnzDjLonLtX9H62q8+n6Ge9eeY9SCJ8FQ/rdq7sSiIUj2tXMHVMh5611j6EsWyQUMvMx3WOWctt+BTrRjC1UMbBngRB1+LEw1FD9E2vw3RAM6aMqdcthkcOd1eJ56oCzWg1rm69y3+XFUSXOSCe0AAAAABJRU5ErkJggg=="
-                        alt="">
-                    <p>Taheer Hatia</p>
-                    <p>Currently studying at Scaler School Of Technology.</p>
+        </div>
+    </section>
 
-                </div>
-                <div class="text">
-                    <p>
-                        As a student, I am constantly learning and growing in the world of web development. The skills I have gained so far, especially in HTML and CSS, have helped me build a strong foundation. I’m excited to apply my knowledge to real projects and continue improving every day. This journey has boosted my confidence and passion for creating beautiful, functional websites.
-                    </p>
 
-                </div>
+    <section class="projects" id="projects">
+        <h3>Projects</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Activity </h4>
+                <p>A personal project hosted on GitHub showcasing activity tracking functionality.</p>
+                <a href="https://github.com/TheTaheer1/Activity" target="_blank" class="view-btn">View Project</a>
             </div>
-        </section>
-        <!--Section4: Contact-->
-        <section id="Contact" class="Contact">
-            <h2>Contact</h2>
-            <div class="group">
-                <div class="text">
-                    <p>
-                        I’m always open to new opportunities, questions, or collaborations. Whether you want to discuss a project, ask about my skills, or just say hello, feel free to reach out! I look forward to connecting with you and growing together.
-                    </p>
-                </div>
-                <form> 
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                    <label for="message">Message</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
+            <div class="card">
+                <h4>My Portfolio Website</h4>
+                <p>This portfolio website project showcasing my skills in HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/TheTaheer1/My-Website" target="_blank" class="view-btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="qual">
+        <h3>Qualification</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <a href="https://www.scaler.com/" target="_blank">
+                    <div class="timeline-icon"><i class="fa fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <h4>Scaler School Of Technology</h4>
+                        <p><em>2025 - 2029</em></p>
+                        <p>Focused on modern web technologies and building practical projects for real-world
+                            applications.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="timeline-item">
+                <a href="https://www.bits-pilani.ac.in/" target="_blank">
+                    <div class="timeline-icon"><i class="fa fa-university"></i></div>
+                    <div class="timeline-content">
+                        <h4>BITS Pilani – BSc. Computer Science</h4>
+                        <p><em>2025 - 2029</em></p>
+                        <p>Strong foundation in computer science, data structures, algorithms, and software development.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact" style="padding:7rem 9%; background: #0b1a26;">
+        <h3 style="text-align:center; font-size:3rem; margin-bottom:2rem;">Connect with Me</h3>
+        <p style="text-align:center; font-size:1.6rem; margin-bottom:3rem;">Feel free to reach out for collaborations,
+            projects, or just to say hello!</p>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="mailto:taheerhatia18@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                     <button type="submit">Send Message</button>
-                    
                 </form>
             </div>
 
-        </section>
-    </main>
+            <div class="socials">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAACUCAMAAAANv/M2AAAAM1BMVEXk5ueutLersbTn6eqorrHg4uPq7O3Hy83Z3N3P0tTKztDT1tjd3+C0uby3vL/EyMq+wsUfEJVQAAAE2ElEQVR4nO2c247jIAyGAwZKOL//0w5JD9ND0oZgQyr1vxntaqT91jJ2MLaH4aeffvrpp2qBAujNsFUTqHR6HM3JGKudvPzdcQUgrUmBCSF4Vv4hWEjGuuNygxxT4IKzR/EZXKoDcoOS0TP+THwFZz451ZvxSTDo8GLiZ4N73RvzUTp+QJ4lkj2Mj8AQ2Qbk2UuSPAa20puAL9jeHsK1oyiAnnyke/wDHbZ5xh21d32pQftS5smzu55HsMXEZ3WkhrHMnf8lxl7HEcZy17hRd7I12P3MrJOH5DNYw8yY7kDtdsSNe3HeIfKlOuYpObZGhtPewPEvcWpsalnPzJofxspDeBYPsiEymFqHvlCfGkI7FENP1K4d9AnH0JODNEvnDuUUzhKtTK2qQ/SdQqsAgmdo1iqbA5pHT+KxCbRERM7yLUwNIy40H+mZEb6UnqBTA+baz+hXavqoV3lfWYI29E4d0aE9fVbE9o6cFckt7bANnaHJS8AWNR3O4tQ3GEB36SzqTz2F79I5KRJbWhEYmnnqWxe+S2cRn0ScW/iziG/lmgSaOCfuLu6+E3HMA/ODvkLT3l6wqjQ/6M/Q3+geNNGDGJrgI4+Rx2ma5DLSQiOW8e5EXVz/xg8mkk9TRvxp+pWXANzq40WJuoZAcbElr9ZQlBDo62IBH5q+woTv1OQuTVCAFJaamaDUSx2lZ31jUX13s9UadJtXfVzo0OT5E/fK1ehJbgDcx88mzINCLPdy+iB9EeLzp2jXpoLXOpHaNQR9ZZMK1lNzmyfmGzVKWmzbeDUgXXAbd25ilJpEg/flJ+rqYN0uRP9LVl5hOPmb1oLA1UF3mi+qeulq9EX6qgpbix4t32eVzBI9mLnr+MVe6r6DZ3JtAvGtofv5xlnlCb1F+89HmY1zfRdk1rqpflFFM2e8ScPjBsFgtsx9Tsji1H2u76Zts5+c9R9FfJDS0b8PJNwnfYAT+CQ9BrGW2LkIRh90zYAzXry6d/6vRH3g5QKgBhvD/bXXh2SHI07nPwiyFzhrR2PMaLWetk/0RtoouKo3yBaBmnVjvv65N9eCzhaVTlsT07TFQfyLT159Gq2T86aPY+BPwNqOpxRyXBPLoXpe9cF9iMZqOfR2GqWkPaXZuBvyOJ92f4QUR9ftcGZ3zVnQs9WdHmvk+dd9Gttz539PTvlvf+mDTwlHNkw42YnNwpqXcm4frWvi4ADOpEKXWOfmIeZ8SY2sbGBFN5WP3MxHIMSGQRpO0A6UPwE1kXdnTz4xkg6mGdtS7IVROnki5BmbB4NtbSUDqicvYrMRM5SALNxLs1OCWSxrgyyrbFRhJ6QCcE59jZDZFAFj/YmEISElku3Y1athbHW2LpeoWosFGrmLZqOysXczq7FyWcp+ar63FqViY29+wN61Fgtc8f4tZOxyF9m1fwtXxRVWsM3yyRvqWESNPYW/U2XHkWQEZ4e43xyxSRq792kzNc3U0E7xsIkaTG/QB22irtknR6INPUP47dHVEp/a4EAejvnzDjLonLtX9H62q8+n6Ge9eeY9SCJ8FQ/rdq7sSiIUj2tXMHVMh5611j6EsWyQUMvMx3WOWctt+BTrRjC1UMbBngRB1+LEw1FD9E2vw3RAM6aMqdcthkcOd1eJ56oCzWg1rm69y3+XFUSXOSCe0AAAAABJRU5ErkJggg=="
+                    alt="Taheer Avatar">
+                <div>
+                    <a href="https://www.linkedin.com/in/taheer-hatia-16ab37370/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/TheTaheer1" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="mailto:taheerhatia18@gmail.com"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Taheer. All Rights Reserved.</p>
+    </footer>
 
 </body>
 
